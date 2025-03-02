@@ -15,7 +15,7 @@ jobs:
           lfs: true
       - name: Build
         id: build
-        uses: manleydev/build-godot-action@v1.4.1
+        uses: felix-schindler/build-godot-action@v2.0.0
         with:
           name: task_time_tracker
           preset: ${{ matrix.platform }}
