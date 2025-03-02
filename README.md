@@ -1,9 +1,9 @@
 
-![GitHub repo size](https://img.shields.io/github/repo-size/MaxGripe/repository-template)
-![GitHub License](https://img.shields.io/github/license/MaxGripe/repository-template)
-![GitHub Created At](https://img.shields.io/github/created-at/MaxGripe/repository-template)
-![GitHub forks](https://img.shields.io/github/forks/MaxGripe/repository-template)
-![GitHub Repo stars](https://img.shields.io/github/stars/MaxGripe/repository-template)
+![GitHub repo size](https://img.shields.io/github/repo-size/The-TTT-Syndicate/task-time-tracker-redot)
+![GitHub License](https://img.shields.io/github/license/MaxGripe/The-TTT-Syndicate/task-time-tracker-redot)
+![GitHub Created At](https://img.shields.io/github/created-at/The-TTT-Syndicate/task-time-tracker-redot)
+![GitHub forks](https://img.shields.io/github/forks/The-TTT-Syndicate/task-time-tracker-redot)
+![GitHub Repo stars](https://img.shields.io/github/stars/The-TTT-Syndicate/task-time-tracker-redot)
 
 
 # Template Repository
