@@ -17,7 +17,7 @@ Written in GDScript and [Redot Engine](https://github.com/Redot-Engine/) (I pref
 
 ## Issues
 
-If you have any suggestions or problems with this program, feel free to open an issue—I’ll be happy to help.
+If you have any suggestions or problems with this program, feel free to open an issue - I'll be happy to help.
 
 ## Contribution
 
