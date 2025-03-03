@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: win-artifact
-          path: output/win-x64/task-time-tracker.exe
+          path: ./Task_Time_Tracker.exe
 
   build-macos:
     name: Build for macOS
@@ -54,7 +54,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: mac-artifact
-          path: ${{ steps.build-macos.outputs.build }}
+          path: ./Task_Time_Tracker.zip
 
   create-release:
     name: Create GitHub Release
