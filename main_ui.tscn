@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://bdrjjp3800vqf"]
 
-[ext_resource type="FontFile" uid="uid://dd0a6el7ovi6b" path="res://assets/fonts/JetBrainsMono-Regular.woff2" id="1_ltiux"]
+[ext_resource type="FontFile" uid="uid://d2yhtgocfkjse" path="res://assets/fonts/JetBrainsMono-Regular.woff2" id="1_ltiux"]
 [ext_resource type="Script" path="res://MainUI.gd" id="1_qdrh0"]
 [ext_resource type="Shader" path="res://assets/shaders/hackingaurora.gdshader" id="3_bmjad"]
 [ext_resource type="Shader" path="res://assets/shaders/hackingroad.gdshader" id="3_gdkwv"]
