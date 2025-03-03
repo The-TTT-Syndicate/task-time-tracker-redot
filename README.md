@@ -13,7 +13,7 @@ A simple tool for tracking time spent on individual tasks. Works fine on Windows
 
 ## Information
 
-Written in GDScript and Redot Engine (I prefer Redot over Godot because the latter is run by weirdos).
+Written in GDScript and [Redot Engine](https://github.com/Redot-Engine/) (I prefer Redot over Godot because the latter is run by weirdos).
 
 ## Issues
 
