@@ -29,7 +29,7 @@ x86/
 bld/
 [Bb]in/
 [Oo]bj/
-[Oo]utput/
+[Oo]utput/*
 [Ll]og/
 [Ll]ogs/
 
@@ -409,9 +409,11 @@ FodyWeavers.xsd
 
 # Redot-specific ignores
 .godot/
+.redot/
 .import/
 export.cfg
 export_presets.cfg
+*.import
 
 # Mono-specific ignores
 .mono/

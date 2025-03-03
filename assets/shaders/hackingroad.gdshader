@@ -2,9 +2,7 @@ shader_type canvas_item;
 
 uniform vec4 grid_color : source_color = vec4(1.0, 0.2, 0.8, 1.0);
 uniform vec4 background_color : source_color = vec4(0.05, 0.0, 0.1, 1.0);
-uniform float speed : hint_range(0.1, 2.0) = 2.21;
 uniform float glow_intensity : hint_range(0.0, 1.0) = 1.0;
-uniform float scan_line_speed : hint_range(0.1, 2.0) = 2.5;
 uniform float ease_strength : hint_range(32.0, 34.0) = 10.0;
 
 void fragment() {
@@ -15,7 +13,6 @@ void fragment() {
     uv.y += 1.0;
     uv.y *= perspective;
 
-    float grid_y = fract(uv.y + TIME * speed);
     float grid_spacing_x = 0.3;
     float line_thickness = 0.05;
     float line_x = abs(fract(uv.x / (grid_spacing_x * (0.1 + uv.y))) - 0.5) / line_thickness;

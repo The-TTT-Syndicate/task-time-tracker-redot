@@ -1,10 +1,10 @@
 [gd_scene load_steps=17 format=3 uid="uid://bdrjjp3800vqf"]
 
-[ext_resource type="FontFile" uid="uid://b4mch84tca804" path="res://JetBrainsMono-Regular.woff2" id="1_ltiux"]
+[ext_resource type="FontFile" uid="uid://dd0a6el7ovi6b" path="res://assets/fonts/JetBrainsMono-Regular.woff2" id="1_ltiux"]
 [ext_resource type="Script" path="res://MainUI.gd" id="1_qdrh0"]
-[ext_resource type="Shader" path="res://hackingsun.gdshader" id="3_bmjad"]
-[ext_resource type="Shader" path="res://hackingtime.gdshader" id="3_gdkwv"]
-[ext_resource type="Shader" path="res://hackingfog.gdshader" id="3_mb33n"]
+[ext_resource type="Shader" path="res://assets/shaders/hackingaurora.gdshader" id="3_bmjad"]
+[ext_resource type="Shader" path="res://assets/shaders/hackingroad.gdshader" id="3_gdkwv"]
+[ext_resource type="Shader" path="res://assets/shaders/hackinghorizon.gdshader" id="3_mb33n"]
 
 [sub_resource type="Theme" id="Theme_3ofuc"]
 default_font = ExtResource("1_ltiux")
@@ -20,9 +20,7 @@ shader_parameter/aurora_speed = 0.1
 shader = ExtResource("3_gdkwv")
 shader_parameter/grid_color = Color(1, 0.2, 0.8, 1)
 shader_parameter/background_color = Color(0.05, 0, 0.1, 1)
-shader_parameter/speed = 0.2
 shader_parameter/glow_intensity = 0.4
-shader_parameter/scan_line_speed = 0.5
 shader_parameter/ease_strength = 2.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_bnux0"]

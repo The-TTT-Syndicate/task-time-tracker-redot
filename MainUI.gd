@@ -122,9 +122,9 @@ func _on_reset_all_pressed():
 			var time_label = grid.get_child(4) if grid.get_child_count() > 4 else null
 
 			if play_button and play_button is Button:
-				var play_btn_texture = preload("res://play.svg")
+				var play_btn_texture = preload("res://assets/gfx/play.svg")
 				play_button.icon = play_btn_texture
-
+	
 			if time_label and time_label is Label:
 				time_label.add_theme_color_override("font_color", Color(1, 1, 1))
 
@@ -147,7 +147,7 @@ func add_task_ui(task: Task):
 	spacer.text = ""
 	
 	var delete_btn = Button.new()
-	var delete_btn_texture = preload("res://delete.svg")
+	var delete_btn_texture = preload("res://assets/gfx/delete.svg")
 	delete_btn.icon = delete_btn_texture
 	delete_btn.connect("pressed", Callable(self, "_on_delete_task").bind(task, grid))
 	delete_btn.add_theme_constant_override("margin_left", 5)
@@ -160,7 +160,7 @@ func add_task_ui(task: Task):
 	name_edit.connect("focus_exited", Callable(self, "_on_name_focus_exited").bind(name_edit))
 	
 	var play_btn = Button.new()
-	var play_btn_texture = preload("res://play.svg")
+	var play_btn_texture = preload("res://assets/gfx/play.svg")
 	play_btn.icon = play_btn_texture
 	
 	play_btn.connect("pressed", Callable(self, "_on_play_pause").bind(task, play_btn))
@@ -197,7 +197,7 @@ func _on_play_pause(task: Task, button: Button):
 	if active_task == task:
 		active_task = null
 		task.is_running = false
-		var play_btn_texture = preload("res://play.svg")
+		var play_btn_texture = preload("res://assets/gfx/play.svg")
 		button.icon = play_btn_texture
 		timer.stop()
 		
@@ -215,7 +215,7 @@ func _on_play_pause(task: Task, button: Button):
 		for grid in task_list_container.get_children():
 			if grid is GridContainer:
 				var play_button = grid.get_child(3)
-				var play_btn_texture = preload("res://play.svg")
+				var play_btn_texture = preload("res://assets/gfx/play.svg")
 				play_button.icon = play_btn_texture
 				
 				var time_label = grid.get_child(4) if grid.get_child_count() > 4 else null
@@ -224,7 +224,7 @@ func _on_play_pause(task: Task, button: Button):
 		
 		active_task = task
 		task.is_running = true
-		var pause_btn_texture = preload("res://pause.svg")
+		var pause_btn_texture = preload("res://assets/gfx/pause.svg")
 		button.icon = pause_btn_texture
 		timer.start()
 
@@ -262,11 +262,11 @@ func update_time_displays():
 			var time_label = grid.get_child(4)
 			var play_button = grid.get_child(3)
 			
-			var play_btn_texture = preload("res://play.svg")
+			var play_btn_texture = preload("res://assets/gfx/play.svg")
 			play_button.icon = play_btn_texture
 			
 			if active_task and tasks[task_list_container.get_children().find(grid)] == active_task:
-				var pause_btn_texture = preload("res://pause.svg")
+				var pause_btn_texture = preload("res://assets/gfx/pause.svg")
 				play_button.icon = pause_btn_texture
 		
 			if time_label is Label:
